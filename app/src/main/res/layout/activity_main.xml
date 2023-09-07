@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/design_default_color_primary_dark"
+
+        >
+       <com.google.android.material.imageview.ShapeableImageView
+           android:layout_width="100dp"
+           android:layout_height="90dp"
+           android:src="@mipmap/preguntas"
+           android:layout_margin="10dp">
+
+       </com.google.android.material.imageview.ShapeableImageView>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_secondary"
+            android:layout_marginBottom="2dp"
+            android:textSize="40sp"
+            android:text="Comparador"
+            tools:layout_editor_absoluteX="16dp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-69dp">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/palabra1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="texto1"
+            android:layout_margin="20dp">
+
+
+        </androidx.appcompat.widget.AppCompatEditText>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/palabra2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+
+            android:hint="texto2">
+
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/boton"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="Comparar"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="15sp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/resultado"
+                android:layout_width="300sp"
+                android:layout_height="100sp"
+                android:layout_margin="10dp"
+                android:text="Resultado"
+                android:background="@drawable/preguntas_background"
+                android:textColor="@color/white"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textSize="30sp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
