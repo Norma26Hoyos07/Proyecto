@@ -48,7 +48,13 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
+    testImplementation ("androidx.arch.core:core-testing:2.1.0")
+    androidTestImplementation ("com.android.support.test:rules:1.0.2")
+    androidTestImplementation ("com.android.support.test:runner:1.0.2")
+    androidTestImplementation ("androidx.arch.core:core-testing:2.1.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
 }
